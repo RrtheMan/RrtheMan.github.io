@@ -314,73 +314,7 @@ board {
         </nav>
     </body>
     
-<body style="background:#FBDA0C">
-    <div class="container mt-5" >
-        <h1 style="margin-top: 150px;font-size: 50px">Our services for Sustainable Merchandise in Brighton</h1>
-        <div class="image-bubble-container" style="margin-top: 50px" >
-        <div class="image-bubble" style="margin-bottom: 100px">
-            <img src="images/Recycled_merchandise.jpg" alt="Image 1">
-            <div class="text-box">
-                <p>Recycled Merchandise</p>
-                <a>Find unique items created from reclaimed materials. Give new life to old resources.</a>
-                <a href="mer.php" class="button-link">
-                        <button class="bubble-button">Click Me</button>
-                    </a>
-            </div>
-        </div>
-        <div class="image-bubble" style="margin-bottom: 100px">
-            <img src="images/Order_selection.jpg" alt="Image 1">
-            <div class="text-box" >
-                <p>Order Selection</p>
-                <a>Decide the design for your clothing. Pick any of the old materials to forge a new look. </a>
-                <?php
-                if (!isset($_SESSION['username'])){
-                echo '<a href="Login.php" class="button-link">
-                        <button class="bubble-button">Click Me</button>
-                    </a>';
-                }
-                else{
-                    echo'<a href="design.php" class="button-link">
-                        <button class="bubble-button">Click Me</button>
-                    </a>';
-                }
-                ?>
-                
-                
-            </div>
-            
-        </div>
-        <div class="image-bubble" style="margin-bottom: 100px">
-            <img src="images/account.jpeg" alt="Image 1">
-            <div class="text-box">
-                <p>Account</p>
-                <a>Go to your account by logging or signing up. Go though all your information.</a>
-                <?php
-                if (!isset($_SESSION['username'])){
-                echo '<a href="Login.php" class="button-link">
-                        <button class="bubble-button">Click Me</button>
-                    </a>';
-                }
-                else{
-                    echo'<a href="account.php" class="button-link">
-                        <button class="bubble-button">Click Me</button>
-                    </a>';
-                }
-                ?>
-            </div>
-        </div>
-        
-        
-    </div>
-        
-    </div>
-    <?php Footer(); ?>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
 
-    </body>
     
         
 </html>
