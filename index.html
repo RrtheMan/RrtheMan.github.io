@@ -49,10 +49,11 @@
 }
 
 .black-bar contain {
-    position: absolute;
-     text-align: center;
-    
-    right: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
     
 }
 
@@ -63,7 +64,21 @@
     font-family: 'Roboto', sans-serif;
   padding: 10px;
 }
+li {
+  float: left;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 .user-options {
     list-style-type: none;
     padding: 0;
@@ -343,7 +358,7 @@ board {
         <div class="black-bar">
             <h3>Rafik Rabouhi</h3>
             <div class="contain">
-            <a href="index.html"><h3>Portfolio</h3></a>
+            <li><a href="index.html"><h3>Portfolio</h3></a></li>
             </div>
         </div>
         <nav class="navbar">
