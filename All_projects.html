@@ -1,1 +1,406 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+       
+        <title>Portfolio</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+}
 
+.dashboard {
+    display: flex;
+    height: 100vh;
+    flex-direction: column; 
+}
+
+.sidebar {
+    width: 100%; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.black-bar {
+  
+  width: 100%; 
+  height: 50px; 
+  background-color: gray; 
+    
+
+      
+    
+
+}
+
+.black-bar contain {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+    right:0px;
+    top: 10px;
+    
+}
+.black-bar h3 {
+    color:black
+    font-size: 10px; 
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    
+}
+
+li {
+    list-style-type: none;
+  float: right;
+    
+    
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  
+  text-decoration: none;
+    color: black;
+    font-size: 26px; 
+    font-family: 'Roboto', sans-serif;
+     padding: 6px 20px;
+  
+}
+
+li a:hover {
+  background-color: #111;
+}
+.user-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.user-options li {
+    margin: 20px 0;
+}
+
+.user-options a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.user-options a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.user-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-brand h3 {
+    color: White;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: #0057AD;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content p {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 40px;
+}
+
+.footer-links li a {
+    color: #121828;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-big {
+    list-style-type: none;
+    padding: 0;
+    letter-spacing: 2px;
+    margin-left: 0; 
+}
+
+.footer-big p {
+    margin: 0px 30px;
+    font-size: 30px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    margin-top: 50px;
+}
+
+.footer-big a {
+    margin: 0px 30px;
+    letter-spacing: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: #121828;
+    margin-left: 100px;
+}
+
+.footer-big li {
+    margin: 20px 10px; 
+}
+
+.footer-big li a {
+    font-size: 20px; 
+}
+
+.footer-gallery {
+    margin-top: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.footer-gallery img {
+    height: 70px; 
+    width: auto;
+    filter: grayscale(100%);
+    margin-right: 40px; 
+    animation: slideLeft 5s infinite linear; 
+}
+.imgm {
+    width: 20%;
+    height: 20%; 
+    width: auto;
+    filter: grayscale(100%);
+    margin-right: 0px;
+    margin-top: -20px
+    object-fit: cover;
+}
+
+.image-bubble-container {
+                display: flex;
+                flex-wrap: wrap;
+            justify-content: center;
+      
+                gap: 20px; 
+                
+            }
+            
+            .image-bubble {
+                position: relative;
+                width: 400px;
+                height: 450px; 
+                overflow: hidden;
+                left:0;
+                border-radius: 15px; 
+            }
+            
+            .image-bubble img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+            }
+            
+            .text-box {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: white;
+                
+                padding: 10px 20px;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+            
+            .text-box p {
+                font-size: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 550;
+                margin-top: 20px;
+                opacity: 1;
+                
+            }
+            .text-box a {
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 500;
+                margin-top: 20px;
+                opacity: 1;
+                
+            }
+            .bubble-button {
+                display: block;
+                margin-top: 10px; 
+                padding: 10px 20px;
+                background-color: #0057AD;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em; 
+                text-align: center;
+                width: auto;
+                }
+                .button-link {
+                        text-decoration: none; 
+                    }
+
+.logoff-button {
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 1em; 
+    text-align: center;
+    width: auto;
+    display: block; 
+    margin: 20px auto; 
+}
+
+.logoff-button:hover {
+    background-color: #cc0000; 
+}
+
+board {
+    background-color: #a9c7c0;
+    color: #121828;
+    padding: 20px 0;
+}
+
+.custom-hr {
+    border: none; 
+    height: 2px; 
+    background-color: #000; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #3498db;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-415px);
+    }
+    99% {
+        transform: translateX(-7.4px);
+    }
+}
+
+@media (min-width: 768px) {
+    .dashboard {
+        flex-direction: row; 
+    }
+
+    .sidebar {
+        width: 25%; 
+    }
+
+    .main-content {
+        width: 75%; 
+    }
+
+    .footer-big {
+        margin-left: 400px; 
+    }
+
+    .footer-big p {
+        font-size: 50px; 
+    }
+
+    .footer-big a {
+        font-size: 20px; 
+    }
+
+    .footer-big li a {
+        font-size: 32px; 
+    }
+}
+            
+        </style>
+    </head>
+    <body>
+        <div class="black-bar">
+            <div class="contain">
+            <li style="float:left"><h3>Rafik Rabouhi</h3></li>
+            <li><a href="All_projects.html">Portfolio</a></li>
+            <li><a href="index.html">Menu</a></li>
+            </div>
+        </div>
+        
+    
+        <nav class="navbar">
+  
+            
+           
+        </nav>
+        <div class="imgm"><img src="image/white.png" alt="Image 1"></div>
+         <hr style="border: 2px solid white;margin-bottom: 100px;">
+        <hr style="border: 2px solid white;">
+    </body>
+    
+
+    
+        
+</html>
