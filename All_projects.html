@@ -340,6 +340,8 @@ project {
     text-align: Left;
     display: flex;
     flex-wrap: wrap;
+    align-items: center; /* Align vertically */
+    justify-content: space-between;
     
 }
 .project-content h3{
@@ -362,6 +364,12 @@ project {
     object-fit: cover;
     float: right;
 }
+.text {
+            max-width: 60%; /* Adjust text width */
+        }
+.image {
+            max-width: 35%; /* Adjust image width */
+    }
 
 @keyframes slideLeft {
     0% {
@@ -423,10 +431,14 @@ project {
          <hr style="border: 2px solid white;">
         <div class="project">
             <div class="project-content">
+                <div class="text">
                 
             <h3>FAB Website</h3>
             <h4>This website was made for textile start-up business </h4>
+                </div>
+                <div class="image">
             <img src="image/Fab_img.png" alt="Image 1">
+                </div>
             </div>
         </div>
         <hr style="border: 2px solid white;">
