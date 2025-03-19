@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+       
+        <title>Portfolio</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+}
 
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.black-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;  /* Space between left and right items */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.black-bar h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;  /* Ensures no extra margin */
+}
+
+.black-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.black-bar li {
+    margin: 0 10px;
+}
+
+.black-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.black-bar li a:hover {
+    background-color: #111;
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #0057AD;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content p {
+    font-size: 20px;
+}
+
+.footer-gallery img {
+    height: 70px;
+    filter: grayscale(100%);
+    margin-right: 40px;
+    animation: slideLeft 5s infinite linear;
+}
+
+.project-content {
+    display: flex;
+    background-color: #555555;
+    text-align: left;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: row-reverse; 
+}
+
+.project-content img {
+    max-width: 40%;
+    object-fit: cover;
+}
+.project-content li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.project-content li a img:hover {
+    background-color: #111;
+}
+
+.project-title {
+    background-color: #777777;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 3px solid #444;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px 20px;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-415px);
+    }
+    99% {
+        transform: translateX(-7.4px);
+    }
+}
+
+@media (min-width: 768px) {
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .main-content {
+        width: 75%;
+    }
+
+    .footer-big {
+        margin-left: 400px;
+    }
+}
+            
+        </style>
+    </head>
+    <body>
+        <header class="black-bar">
+        <nav>
+            <ul>
+                <li><h3>Projects</h3></li>
+                <li><a href="All_projects.html">Portfolio</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Section -->
+    <section class="project">
+        <div class="project-title">
+            <div class="text">
+                <div class="Box">
+                    <h3>Project</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAB Website Project -->
+    <section class="project">
+        <div class="project-content">
+            <div class="text">
+                <h3>FAB Website</h3>
+                <h4>This website was made for a textile start-up business</h4>
+            </div>
+            <div class="image">
+                <li><a href="FAB.html"><img src="image/Fab_img.png" alt="FAB website project screenshot"></a></li>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
