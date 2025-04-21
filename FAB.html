@@ -43,14 +43,21 @@
     color: white;
 }
 
-.button {
-    background-color: #000000;   
-    padding: 20px 20px;
-    width: 10%;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: space-between;
-    
+.next-page-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.next-page-button:hover {
+    background-color: #222;
+    transform: scale(1.05);
 }
 
 .main-content {
@@ -345,11 +352,9 @@ board {
             
         </div>
     </section>
-        <a href="FAB.html">
-        <div class="button">
-            <h3 style="color: white;">next page</h3>
-        </div>
-        </a>
+      <div style="text-align: center; margin: 30px 0;">
+    <a href="FAB.html" class="next-page-button">Next Page</a>
+</div>
         <footer>
             
         
